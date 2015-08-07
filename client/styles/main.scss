@@ -1,0 +1,72 @@
+$background: lightblue;
+
+body {
+  background: $background;
+  font-family: "Helvetica Neue", serif;
+}
+
+.form {
+  textarea {
+    width: 100%;
+    font-size: 1.5em;
+  }
+}
+
+.tokipona {
+  padding: 10px;
+  background: white;
+  font-size: 2em;
+  word-wrap: break-word;
+
+  span {
+    vertical-align: middle;
+  }
+
+  .sitelen {
+    text-rendering: optimizeLegibility;
+    font-family: 'toki-ponaregular';
+  }
+  .mess, .sign {
+    font-family: 'Arial';
+    // font-style: italic;
+    font-size: 0.5em;
+    color: #4471CA;
+  }
+  .space {
+    
+  }
+
+  .interword:after { //@fix: FF renders <span>toki</span><span>pona</span> as <span>tokipona</span>
+    content: ' ';
+    font-size: 1px;
+  }
+  .period {
+
+  }
+}
+
+
+.tokipona {
+  width: 500px;
+  display: table;
+}
+
+
+// @media only screen and (max-width: 320px) {
+//   .form, .tokipona {
+//     width: 100%;
+//   }
+// }
+
+// @media only screen and (min-width: 321px) and (max-width: 1023px) {
+//   .form, .tokipona {
+//     width: 70%;
+//   }
+// }
+
+// @media only screen and (min-width: 1024px) {
+//   .form, .tokipona {
+//     width: 800px;
+//   }
+// }
+

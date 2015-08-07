@@ -1,0 +1,87 @@
+{
+  "name": "react-webpack-boilerplate",
+  "version": "2.0.0",
+  "description": "Simple production ready boilerplate for React, Webpack (SASS and React hot reloading), tests and coverage.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "NODE_ENV=test jest",
+    "coverage": "NODE_ENV=test jest --coverage",
+    "dist": "NODE_ENV=production webpack -p",
+    "postinstall": "npm run dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srn/react-webpack-boilerplate.git"
+  },
+  "engines": {
+    "node": "0.10",
+    "npm": "2.10"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "boilerplate",
+    "production",
+    "sass",
+    "hot",
+    "reload"
+  ],
+  "author": "Søren Brokær <root@srn.io> (http://srn.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srn/react-webpack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/srn/react-webpack-boilerplate",
+  "dependencies": {
+    "compression": "1.5.1",
+    "ejs": "2.3.3",
+    "express": "4.13.1",
+    "express-ejs-layouts": "1.1.0",
+    "file-loader": "0.8.4",
+    "html2canvas": "0.5.0-alpha2",
+    "object-assign": "3.0.0",
+    "react": "0.13.3",
+    "url-loader": "0.5.6",
+    "webpack": "1.10.1"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "2.2.0",
+    "autoprefixer-loader": "2.0.0",
+    "babel": "5.6.14",
+    "babel-core": "5.6.15",
+    "babel-eslint": "3.1.20",
+    "babel-jest": "5.3.0",
+    "babel-loader": "5.2.2",
+    "babel-runtime": "5.6.15",
+    "coveralls": "2.11.2",
+    "css-loader": "0.14.4",
+    "eslint": "0.24.0",
+    "eslint-loader": "0.14.1",
+    "eslint-plugin-react": "2.6.3",
+    "jest-cli": "0.4.13",
+    "jsx-loader": "0.13.2",
+    "node-libs-browser": "0.5.2",
+    "react-hot-loader": "1.2.7",
+    "react-tools": "0.13.3",
+    "sass-loader": "1.0.2",
+    "style-loader": "0.12.3",
+    "webpack-dev-server": "1.10.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx"
+    ],
+    "testFileExtensions": [
+      "test.js",
+      "test.jsx"
+    ],
+    "testDirectoryName": "client"
+  }
+}
