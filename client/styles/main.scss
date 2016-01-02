@@ -52,6 +52,17 @@ body {
 }
 
 
+a {
+  color: #33f;
+}
+
+.muted {
+  color: #777;
+  a {
+    color: #77f;
+  }
+}
+
 // @media only screen and (max-width: 320px) {
 //   .form, .tokipona {
 //     width: 100%;

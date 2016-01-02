@@ -33,6 +33,10 @@ export default class IndexComponent extends React.Component {
         <ExporterComponent>
           <SitelenComponent value={this.state.text} />
         </ExporterComponent>
+        <div>
+          <p className="muted"><small>Created for fun by <a target="_blank" href="https://www.facebook.com/thorgeir.tycho">Sergey Tikhonov</a></small></p>
+          <p className="muted"><small>Source code at <a target="_blank" href="https://github.com/toki-pona/ilo-pi-sitelen-pona/">Github</a></small></p>
+        </div>
       </section>
     );
   }
